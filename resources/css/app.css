@@ -1,0 +1,51 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ff2d20;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.letter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff2d20;
+    transition: color 0.3s ease;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.logo:hover .letter {
+    color: #fff;
+}
+
+.logo:hover {
+    background-color: #ff2d20;
+}
